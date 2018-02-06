@@ -12,8 +12,8 @@
         <Button x:Name="Button3" Content="Добавить слово" HorizontalAlignment="Left" Margin="396,129,0,0" VerticalAlignment="Top" Width="98" Click="Button3_Click"/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="43,93,0,0" TextWrapping="Wrap" Text="Английское слово" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="43,126,0,0" TextWrapping="Wrap" Text="Перевод" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="43,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27" Width="64"/>
-        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="169,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.107,-1.336"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="20,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="421"/>
+        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="20,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.107,-1.336" Width="421" Height="17"/>
 
     </Grid>
 </Window>
