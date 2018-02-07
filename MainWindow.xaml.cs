@@ -22,8 +22,8 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        int num, index, ploh, i = 0;
-        DateTime data1, data2;
+        int num, index, ploh, i = 0, ii=0;
+        DateTime data1, data2, data3;
         string eng, rus, stroka, vrem;
         Boolean fgot = false, fgot1 = false, den1 = false, den3 = false, den7 = false, den21 = false, den50 = false;
 
@@ -84,6 +84,7 @@ namespace WpfApp1
             {
                 using (StreamReader sw = new StreamReader("test.txt"))
                 {
+
                     stroka = sw.ReadLine();
                     index = stroka.IndexOf('|');
                     vrem = stroka.Substring(0, index);
@@ -123,12 +124,13 @@ namespace WpfApp1
                     index = stroka.IndexOf('|');
                     vrem = stroka.Substring(0, index);
                     ploh = Convert.ToInt32(vrem);
-                    sw.Close();
                     TextBlock1.Text = "1111";
                     data2 = DateTime.Today;
                     if (den50 == false)
                     {
-                        if (data2 >= data1.AddDays(50))
+                        data3 = data1;
+                        data3.AddDays(50);
+                        if ((data2.Year >= data3.Year) && (data2.Month >= data3.Month) && (data2.Day >= data3.Day))
                         {
                             fgot = true;
                         }
@@ -137,7 +139,9 @@ namespace WpfApp1
 
                     if (den21 == false)
                     {
-                        if (data2 >= data1.AddDays(21))
+                        data3 = data1;
+                        data3.AddDays(21);
+                        if ((data2.Year >= data3.Year) && (data2.Month >= data3.Month) && (data2.Day >= data3.Day))
                         {
                             fgot = true;
                         }
@@ -146,7 +150,9 @@ namespace WpfApp1
 
                     if (den7 == false)
                     {
-                        if (data2 >= data1.AddDays(7))
+                        data3 = data1;
+                        data3.AddDays(7);
+                        if ((data2.Year >= data3.Year) && (data2.Month >= data3.Month) && (data2.Day >= data3.Day))
                         {
                             fgot = true;
                         }
@@ -155,7 +161,9 @@ namespace WpfApp1
 
                     if (den3 == false)
                     {
-                        if (data2 >= data1.AddDays(3))
+                        data3 = data1;
+                        data3.AddDays(3);
+                        if ((data2.Year >= data3.Year) && (data2.Month >= data3.Month) && (data2.Day >= data3.Day))
                         {
                             fgot = true;
                         }
@@ -164,19 +172,24 @@ namespace WpfApp1
 
                     if (den1 == false)
                     {
-                        if (data2 >= data1.AddDays(1))
+                        data3 = data1;
+                        data3.AddDays(1);
+                        if ((data2.Year >= data1.Year) && (data2.Month >= data1.Month) && (data2.Day >= data1.Day))
                         {
                             fgot = true;
+                            TextBlock2.Text = data1.ToString() + data2.ToString();
                         }
                     }
                     if (fgot == true)
                     {
                         TextBlock1.Text = eng;
                         i++;
-                    }
-                    else
+                        sw.Close();
+                    } else
+                    if (stroka != null)
                     {
                         TextBlock1.Text = "Не найдено слово для проверки";
+                        sw.Close();
                         i++;
                     }
                 }
