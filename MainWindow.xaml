@@ -8,7 +8,7 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button x:Name="Button1" Content="Проверка" HorizontalAlignment="Left" Margin="396,63,0,0" VerticalAlignment="Top" Width="98" Click="Button1_Click"/>
-        <Button x:Name="Button2" Content="Потвердить" HorizontalAlignment="Left" Margin="396,96,0,0" VerticalAlignment="Top" Width="98"/>
+        <Button x:Name="Button2" Content="Потвердить" HorizontalAlignment="Left" Margin="396,96,0,0" VerticalAlignment="Top" Width="98" Click="Button2_Click"/>
         <Button x:Name="Button3" Content="Добавить слово" HorizontalAlignment="Left" Margin="396,129,0,0" VerticalAlignment="Top" Width="98" Click="Button3_Click"/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="43,93,0,0" TextWrapping="Wrap" Text="Английское слово" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="43,126,0,0" TextWrapping="Wrap" Text="Перевод" VerticalAlignment="Top" Width="120"/>
