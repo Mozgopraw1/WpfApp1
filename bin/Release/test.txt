@@ -1,0 +1,2 @@
+0|Английское слово|Перевод|09.02.2018|False|False|True|True|True|True|True|8|
+1|eye|Глаз, Взгляд, Око, Глазок, Взор|09.02.2018|False|False|False|False|False|False|False|0|
