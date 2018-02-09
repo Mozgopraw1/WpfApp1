@@ -1,6 +1,8 @@
-0|Английское слово|Перевод|01.01.2000|False|False|True|True|True|True|True|0|
+0|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|8|
 1|Английское слово1|Перевод|09.02.2018|False|False|True|True|False|False|False|0|
 2|Английское слово2|Перевод|09.02.2018|False|False|False|False|False|False|False|2|
 3|Английское слово3|Перевод|09.02.2018|False|False|True|False|False|False|False|0|
 4|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|
 5|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|
+6|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|
+7|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|

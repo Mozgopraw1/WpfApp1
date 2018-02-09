@@ -179,7 +179,6 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
