@@ -1,6 +1,6 @@
-п»ї0|РђРЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|10.02.2018|False|False|False|False|False|False|False|0|
-1|РђРЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|10.02.2018|False|False|False|False|False|False|False|0|
-2|РђРЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|10.02.2018|False|False|False|False|False|False|False|0|
-3|РђРЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|10.02.2018|False|False|False|False|False|False|False|0|
-4|РђРЅРіР»РёР№СЃРєРѕРµ xyu СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|01.02.2018|False|False|False|False|False|False|False|0|
-5|РђРЅРіР»РёР№СЃРєРѕРµ СЃР»РѕРІРѕ|РџРµСЂРµРІРѕРґ|10.02.2018|False|False|False|False|False|False|False|0|
+0|Английское слово|Перевод|01.01.2000|False|False|True|True|True|True|True|0|
+1|Английское слово1|Перевод|09.02.2018|False|False|True|True|False|False|False|0|
+2|Английское слово2|Перевод|09.02.2018|False|False|False|False|False|False|False|2|
+3|Английское слово3|Перевод|09.02.2018|False|False|True|False|False|False|False|0|
+4|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|
+5|Английское слово|Перевод|09.02.2018|False|False|False|False|False|False|False|0|

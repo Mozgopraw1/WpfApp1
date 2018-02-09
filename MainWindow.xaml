@@ -15,7 +15,7 @@
         <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Margin="20,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="17" Width="421"/>
         <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Margin="20,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="-0.107,-1.336" Width="421" Height="17"/>
         <Button x:Name="Da" Content="Да" HorizontalAlignment="Left" Margin="43,169,0,0" VerticalAlignment="Top" Width="55" Click="Da_Click"/>
-        <Button x:Name="Net" Content="Нет" HorizontalAlignment="Left" Margin="108,169,0,0" VerticalAlignment="Top" Width="55"/>
+        <Button x:Name="Net" Content="Нет" HorizontalAlignment="Left" Margin="108,169,0,0" VerticalAlignment="Top" Width="55" Click="Net_Click"/>
 
     </Grid>
 </Window>
