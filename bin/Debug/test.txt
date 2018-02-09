@@ -1,6 +1,6 @@
-﻿1|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|
-1|Английское слово|Перевод|02.02.2018|False|False|False|False|False|False|False|0|
-2|Английское слово|Перевод|03.02.2018|False|False|False|False|False|False|False|0|
-3|Английское слово|Перевод|04.02.2018|False|False|False|False|False|False|False|0|
-4|Английское xyu слово|Перевод|05.02.2018|False|False|False|False|False|False|False|0|
-5|Английское слово|Перевод|06.02.2018|False|False|False|False|False|False|False|0|
+﻿0|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|
+1|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|
+2|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|
+3|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|
+4|Английское xyu слово|Перевод|01.02.2018|False|False|False|False|False|False|False|0|
+5|Английское слово|Перевод|10.02.2018|False|False|False|False|False|False|False|0|

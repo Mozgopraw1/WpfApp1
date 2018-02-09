@@ -22,28 +22,59 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        int num, index, ploh, i = 0, ii=0;
+        int num, index, ploh, i = 0, ii=0, a, b, c, d, v;
         DateTime data1, data2, data3;
-
-        private void Button2_Click(object sender, RoutedEventArgs e)
-        {
-            data1 = DateTime.Today;
-            data2 = DateTime.Today;
-            data1=data1.AddDays(100);
-            if (data1 > data2)
-            {
-                TextBlock1.Text = "if1";
-            }
-            if (data1<data2)
-            {
-                TextBlock1.Text = "if2";
-            }
-            TextBlock2.Text = Convert.ToString(data1) + ' ' + Convert.ToString(data2);
-        }
-
-        string eng, rus, stroka, vrem;
+        string eng, rus, stroka, vrem, slovoeng, slovorus;
         Boolean fgot = false, fgot1 = false, den1 = false, den3 = false, den7 = false, den21 = false, den50 = false;
 
+
+
+        private void Da_Click(object sender, RoutedEventArgs e)
+        {
+            
+                
+                FileStream file1 = new FileStream("test.txt", FileMode.Append);
+                StreamReader reader = new StreamReader(file1, Encoding.Unicode);
+                StreamWriter writer = new StreamWriter(file1, Encoding.UTF8);
+            string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
+            fgot = false;
+            if (a==1)
+            {
+                den1 = true;
+            } else
+            if (b==1)
+            {
+                den3 = true;
+            } else
+            if (c==1)
+            {
+                den7 = true;
+            } else
+            if (d==1)
+            {
+                den21 = true;
+            } else
+            if (v==1)
+            {
+                den50 = true;
+            }
+            
+            stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
+                + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+            lines[num] = stroka;
+            writer=
+
+            writer.Close();
+            
+        }
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            slovoeng = TextBlock1.Text;
+            slovorus = TextBox2.Text;
+            TextBlock2.Text = rus;
+        }
+
+        
 
 
 
@@ -51,12 +82,7 @@ namespace WpfApp1
         {
             InitializeComponent();
 
-            FileStream file1 = new FileStream("test.txt", FileMode.Open);
-            StreamReader reader = new StreamReader(file1, Encoding.Unicode);
-            StreamWriter writer = new StreamWriter(file1, Encoding.UTF8);
-
-
-            writer.Close();
+            
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
@@ -146,13 +172,13 @@ namespace WpfApp1
                         vrem = stroka.Substring(0, index);
                         ploh = Convert.ToInt32(vrem);
                         data2 = DateTime.Today;
-                        TextBlock1.Text = "Test1";
                         if (den1 == false)
                         {
                             data1 = data1.AddDays(1);
                             if (data2 >= data1)
                             {
                                 fgot = true;
+                            a = 1;
                             }
                         }
                         else
@@ -162,6 +188,7 @@ namespace WpfApp1
                             if (data2 >= data1)
                             {
                                 fgot = true;
+                            b = 1;
                             }
                         }
                         else
@@ -171,6 +198,7 @@ namespace WpfApp1
                             if (data2 >= data1)
                             {
                                 fgot = true;
+                            c = 1;
                             }
                         }
                         else
@@ -180,6 +208,7 @@ namespace WpfApp1
                             if (data2 >= data1)
                             {
                                 fgot = true;
+                            d = 1;
                             }
                         }
                         else
@@ -189,6 +218,7 @@ namespace WpfApp1
                             if (data2 >= data1)
                             {
                                 fgot = true;
+                            v = 1;
                             }
                         }
                         if (fgot == true)
@@ -205,9 +235,11 @@ namespace WpfApp1
                         break;
                         }
                     }
-                
-                
-              //  TextBlock1.Text = i + " Не найдено слов";
+                    if (ii==0)
+                {
+                    TextBlock1.Text = num + " Не найдено слов";
+                }
+                        
 
 
             }
