@@ -98,10 +98,11 @@ namespace WpfApp1
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             
+                
+
                 using (StreamReader sw = new StreamReader("test.txt"))
                 {
-                while (ii != 1)
-                {
+
                     while ((stroka = sw.ReadLine()) != null)
                     {
 
@@ -145,6 +146,7 @@ namespace WpfApp1
                         vrem = stroka.Substring(0, index);
                         ploh = Convert.ToInt32(vrem);
                         data2 = DateTime.Today;
+                        TextBlock1.Text = "Test1";
                         if (den1 == false)
                         {
                             data1 = data1.AddDays(1);
@@ -156,7 +158,7 @@ namespace WpfApp1
                         else
                         if (den3 == false)
                         {
-                            data1 = data1.AddDays(3);
+                            data1 = data1.AddDays(2);
                             if (data2 >= data1)
                             {
                                 fgot = true;
@@ -165,7 +167,7 @@ namespace WpfApp1
                         else
                         if (den7 == false)
                         {
-                            data1 = data1.AddDays(7);
+                            data1 = data1.AddDays(4);
                             if (data2 >= data1)
                             {
                                 fgot = true;
@@ -174,7 +176,7 @@ namespace WpfApp1
                         else
                         if (den21 == false)
                         {
-                            data1 = data1.AddDays(21);
+                            data1 = data1.AddDays(14);
                             if (data2 >= data1)
                             {
                                 fgot = true;
@@ -183,35 +185,27 @@ namespace WpfApp1
                         else
                         if (den50 == false)
                         {
-                            data1 = data1.AddDays(50);
+                            data1 = data1.AddDays(29);
                             if (data2 >= data1)
                             {
                                 fgot = true;
                             }
                         }
-
-                        
-
-                        
-
-                        
-
-                        
                         if (fgot == true)
                         {
                             TextBlock1.Text = eng;
                             ii++;
                             sw.Close();
-                            break;
+                        break;
                         }
-
-                        if (ii < 1)
+                        if (stroka == null)
                         {
-                            break;
+                            ii++;
+                            TextBlock1.Text = "if stroka == null";
+                        break;
                         }
                     }
-                    ii++;
-                }
+                
                 
               //  TextBlock1.Text = i + " Не найдено слов";
 
