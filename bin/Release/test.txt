@@ -1,2 +1,11 @@
 0|Английское слово|Перевод|09.02.2018|False|False|True|True|True|True|True|8|
-1|eye|Глаз, Взгляд, Око, Глазок, Взор|09.02.2018|False|False|False|False|False|False|False|0|
+1|eye|Глаз, Взгляд, Око, Глазок, Взор|10.02.2018|False|False|True|False|False|False|False|0|
+2|Of|Из, От, О, Об, Для|10.02.2018|False|False|False|False|False|False|False|1|
+3|To|Для, К, В, На, До|10.02.2018|False|False|True|False|False|False|False|0|
+4|Stop|Остановка, Прекращение, Конец|10.02.2018|False|False|False|False|False|False|False|1|
+5|Love|Любовь, Влюблённость, Любить, Возлюбить, Хотеть|10.02.2018|False|False|True|False|False|False|False|0|
+6|Hour|Час|10.02.2018|False|False|True|False|False|False|False|0|
+7|Lose, Lost|Терять, Проиграть, Упускать, Утрачивать, Лишать|10.02.2018|False|False|True|False|False|False|False|0|
+8|Stay|Пребывание, Опора, Остановка, Оставаться|10.02.2018|False|False|True|False|False|False|False|0|
+9|Throw, Threw, Thrown|Бросок, Ход, Метание, Сброс, Кинуть|10.02.2018|False|False|False|False|False|False|False|1|
+10|Figure|Рисунок, Фигура, Цифра, Диаграмма, Образ|10.02.2018|False|False|True|False|False|False|False|0|

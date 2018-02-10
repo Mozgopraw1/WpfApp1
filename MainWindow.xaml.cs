@@ -111,6 +111,7 @@ namespace WpfApp1
             File.WriteAllLines(file1, lines, Encoding.Default);
             a = 0; b = 0; c = 0; d = 0; v = 0;
             TextBlock2.Text = "Повторений: " + ploh;
+            TextBlock1.Text = eng + " - " + rus;
 
         }
 
@@ -129,30 +130,35 @@ namespace WpfApp1
             {
                 den1 = true;
                 data1 = DateTime.Today;
+                ploh++;
             }
             else
             if (b == 1)
             {
                 den3 = true;
                 data1 = DateTime.Today;
+                ploh++;
             }
             else
             if (c == 1)
             {
                 den7 = true;
                 data1 = DateTime.Today;
+                ploh++;
             }
             else
             if (d == 1)
             {
                 den21 = true;
                 data1 = DateTime.Today;
+                ploh++;
             }
             else
             if (v == 1)
             {
                 den50 = true;
                 data1 = DateTime.Today;
+                ploh++;
             }
 
             stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
@@ -162,6 +168,7 @@ namespace WpfApp1
             string file1 = "test.txt";
             File.WriteAllLines(file1, lines, Encoding.Default);
             a = 0; b = 0; c = 0; d = 0; v = 0;
+            TextBlock2.Text = "Слово прошло проверку";
 
         }
         private void Button2_Click(object sender, RoutedEventArgs e)
@@ -202,6 +209,7 @@ namespace WpfApp1
             den7 = false;
             den21 = false;
             den50 = false;
+            ploh = 1;
             stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
                 + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
             using (StreamWriter sw = new StreamWriter(new FileStream("test.txt", FileMode.Append, FileAccess.Write), Encoding.Default))
