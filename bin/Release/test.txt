@@ -1,141 +1,159 @@
 0|Английское слово|Перевод|09.02.2018|False|False|True|True|True|True|True|8|
-1|eye|Глаз, Взгляд, Око, Глазок, Взор|10.02.2018|False|False|True|False|False|False|False|2|
-2|Of|Из, От, О, Об, Для|11.02.2018|False|False|False|False|False|False|False|2|
-3|To|Для, К, В, На, До|10.02.2018|False|False|True|False|False|False|False|2|
-4|Stop|Остановка, Прекращение, Конец|11.02.2018|False|False|True|False|False|False|False|2|
-5|Love|Любовь, Влюблённость, Любить, Возлюбить, Хотеть|10.02.2018|False|False|True|False|False|False|False|2|
-6|Hour|Час|10.02.2018|False|False|True|False|False|False|False|2|
-7|Lose, Lost|Терять, Проиграть, Упускать, Утрачивать, Лишать|10.02.2018|False|False|True|False|False|False|False|2|
-8|Stay|Пребывание, Опора, Остановка, Оставаться|10.02.2018|False|False|True|False|False|False|False|2|
-9|Throw, Threw, Thrown|Бросок, Ход, Метание, Сброс, Кинуть|11.02.2018|False|False|True|False|False|False|False|2|
-10|Figure|Рисунок, Фигура, Цифра, Диаграмма, Образ|10.02.2018|False|False|True|False|False|False|False|2|
-11|Ship|Корабль, Судно|11.02.2018|False|False|True|False|False|False|False|2|
-12|Job|Работа, Задание|11.02.2018|False|False|True|False|False|False|False|2|
-13|Death|Смерть, Гибель, Конец|11.02.2018|False|False|True|False|False|False|False|2|
-14|Dog|Собака, Пёс, Преследование|11.02.2018|False|False|True|False|False|False|False|2|
-15|Bit|Долото, Кусочек, Бит|11.02.2018|False|False|True|False|False|False|False|2|
-16|Lift|Подъем, Подниматься, Лифт|11.02.2018|False|False|True|False|False|False|False|2|
-17|School|Школа, Обучение|11.02.2018|False|False|True|False|False|False|False|2|
-18|Station|Станция, Пункт|11.02.2018|False|False|True|False|False|False|False|2|
-19|Exactly|Точно, Именно, Ровно|11.02.2018|False|False|False|False|False|False|False|2|
-20|Save|Спасать, Экономить|11.02.2018|False|False|True|False|False|False|False|2|
-21|News|Новости, Известия|11.02.2018|False|False|True|False|False|False|False|2|
-22|Island|Остров|11.02.2018|False|False|True|False|False|False|False|2|
-23|Fade|Увядать, Блекнуть, Выцветать|11.02.2018|False|False|True|False|False|False|False|2|
-24|Crack|Трещать, Раскалывать|11.02.2018|False|False|True|False|False|False|False|2|
-25|Motion|Движение, Предложение, Показать жестом|11.02.2018|False|False|True|False|False|False|False|2|
-26|Quote|Цитата|11.02.2018|False|False|True|False|False|False|False|2|
-27|Two|Два, Пара|11.02.2018|False|False|True|False|False|False|False|2|
-28|Thing, Things|Вещь, Предмет, Дело, Факт|11.02.2018|False|False|True|False|False|False|False|2|
-29|Are|Быть, Находиться, Состовлять, Происходить|11.02.2018|False|False|True|False|False|False|False|2|
-30|Infinite|Бесконечный, Безграничный|11.02.2018|False|False|True|False|False|False|False|2|
-31|Universe|Космос, Мир, Человечество, Вселенная|11.02.2018|False|False|True|False|False|False|False|2|
-32|Human|Человек|11.02.2018|False|False|True|False|False|False|False|2|
-33|Sure|Конечно, Непременно, Безусловно, Верный|11.02.2018|False|False|True|False|False|False|False|2|
-34|About|О, Об, Около|11.02.2018|False|False|True|False|False|False|False|2|
-35|Stupidity|Глупость, Тупость|11.02.2018|False|False|True|False|False|False|False|2|
-36|Perfect|Идеальный, Совершенный|11.02.2018|False|False|True|False|False|False|False|2|
-37|Don't|Запрет, Не, Не надо, Перестань|11.02.2018|False|False|True|False|False|False|False|2|
-38|Wait|Ожидание, Ждать, Засада|11.02.2018|False|False|True|False|False|False|False|2|
-39|Take|Взятие, Захват, Дубль, Сбор, Выручка|11.02.2018|False|False|True|False|False|False|False|2|
-40|Make|Делать, Модель, Изготовление|11.02.2018|False|False|True|False|False|False|False|2|
-41|Change|Изменение, Смена, Замена|11.02.2018|False|False|True|False|False|False|False|2|
-42|Use|Использование, Применение|11.02.2018|False|False|True|False|False|False|False|2|
-43|But|Но, А, Однако, Зато, Только|11.02.2018|False|False|True|False|False|False|False|2|
-44|Let|Позволять, Давать, Препятствовать, Помеха|11.02.2018|False|False|True|False|False|False|False|2|
-45|There|Там, Туда, Здесь, Тут, Вон|11.02.2018|False|False|True|False|False|False|False|2|
-46|Only|Только, Лишь, Всего, Единственный|11.02.2018|False|False|True|False|False|False|False|2|
-47|Nothing|Ничего, Ничто, Мелочь|11.02.2018|False|False|True|False|False|False|False|2|
-48|Can|Может, Мочь, Жестяная банка, Болончик|11.02.2018|False|False|True|False|False|False|False|2|
-49|Be|Быть, Находиться, Должен|11.02.2018|False|False|True|False|False|False|False|2|
-50|Done|Сделанный, Обманутый, Прожаренный, Усталый|11.02.2018|False|False|True|False|False|False|False|2|
-51|Is|Есть, Является, Быть, Находиться, Состовлять|11.02.2018|False|False|True|False|False|False|False|2|
-52|Called|Называемый, Именнуемый|11.02.2018|False|False|True|False|False|False|False|2|
-53|Yesterday|Вчера, Вчерашний день, Совсем недавно|11.02.2018|False|False|True|False|False|False|False|2|
-54|Other|Другой, Иной, Остальные|11.02.2018|False|False|True|False|False|False|False|2|
-55|Tomorrow|Завтра, Завтрашний день, Завтрашний|11.02.2018|False|False|True|False|False|False|False|2|
-56|Today|Сегодня, В наши дни, В настоящее время, Сегодняшний день|11.02.2018|False|False|True|False|False|False|False|2|
-57|Believe|Верить, Доверять, Думать, Полагать|11.02.2018|False|False|False|False|False|False|False|2|
-58|Do|Делать, Выполнять|11.02.2018|False|False|True|False|False|False|False|2|
-59|Mostly|Главным образом, По большей части, Обычно, Обыкновенно|11.02.2018|False|False|False|False|False|False|False|2|
-60|Live|Жить, Живой, В прямом эфире|11.02.2018|False|False|True|False|False|False|False|2|
-61|Success|Удача, Успех, Достижение|11.02.2018|False|False|True|False|False|False|False|2|
-62|Key|Ключ, Главный, Основной, Ключевой|11.02.2018|False|False|True|False|False|False|False|2|
-63|Happiness|Счастье, Радость|11.02.2018|False|False|True|False|False|False|False|2|
-64|Doing|Дела, Поступки, Действия|11.02.2018|False|False|True|False|False|False|False|2|
-65|What|Что, Какой, Сколько|11.02.2018|False|False|False|False|False|False|False|2|
-66|Will|Воля, Желание, Завещать|11.02.2018|False|False|True|False|False|False|False|2|
-67|Successful|Удачный, Удачливый, Успешный, Преуспевающий|11.02.2018|False|False|True|False|False|False|False|2|
-68|Minds, Mind|Память, Разум, Ум|11.02.2018|False|False|True|False|False|False|False|2|
-69|Discuss|Обсуждать, Дискутировать, Спорить|11.02.2018|False|False|True|False|False|False|False|2|
-70|Ideas|Идея, Мысли, Понятия|11.02.2018|False|False|True|False|False|False|False|2|
-71|Average|Средний, Обычный|11.02.2018|False|False|False|False|False|False|False|1|
-72|Events|Событие, Случай, Проишествие|11.02.2018|False|False|False|False|False|False|False|1|
-73|Small|Маленький, Небольшой, Малый|11.02.2018|False|False|False|False|False|False|False|1|
-74|People|Люди, Народ, Жители, Нация|11.02.2018|False|False|False|False|False|False|False|1|
-75|Journey|Путешествие, Поездка|11.02.2018|False|False|False|False|False|False|False|1|
-76|Miles, Mile|Миля|11.02.2018|False|False|False|False|False|False|False|1|
-77|Begins, Begin|Начинать, Начинаться|11.02.2018|False|False|False|False|False|False|False|1|
-78|With|С, Вместе с, От|11.02.2018|False|False|False|False|False|False|False|1|
-79|Single|Единственный, Один, Единый|11.02.2018|False|False|False|False|False|False|False|1|
-80|Thousand|Тысяча, Множество, Масса|11.02.2018|False|False|False|False|False|False|False|1|
-81|Step|Шаг, Шагать, Ступень|11.02.2018|False|False|False|False|False|False|False|1|
-82|This|Этот, Это, Эта|11.02.2018|False|False|False|False|False|False|False|1|
-83|Airport, Airports|Аэропорт, Аэропорты|11.02.2018|False|False|False|False|False|False|False|1|
-84|See|Видеть, Смотреть, Престол, Епархия|11.02.2018|False|False|False|False|False|False|False|1|
-85|More|Более, Большой, Ещё, Больший, Подробнее, Дополнительный|11.02.2018|False|False|False|False|False|False|False|1|
-86|Sincere|Искренний, Чистосердечный, Правдивый, Честный, Душевный|11.02.2018|False|False|False|False|False|False|False|1|
-87|Kiss, Kisses|Поцелуй, Целовать, Поцеловаться|11.02.2018|False|False|False|False|False|False|False|1|
-88|Than|Чем, Кроме, Как, Чтобы|11.02.2018|False|False|False|False|False|False|False|1|
-89|Wedding|Свадьба, Свадебный, Бракосочетание, Венчание, Венчальный|11.02.2018|False|False|False|False|False|False|False|1|
-90|Halls, Hall|Зал(ы), Хол, Коридор, Приёмная, Усадьба|11.02.2018|False|False|False|False|False|False|False|1|
-91|Walls, Wall|Стена, Барьер|11.02.2018|False|False|False|False|False|False|False|1|
-92|Hospitals, Hospital|Больница, Госпиталь|11.02.2018|False|False|False|False|False|False|False|1|
-93|Have|Иметь, Обладать, Получать, Содержать|11.02.2018|False|False|False|False|False|False|False|1|
-94|Heard, Hear|Услышать, Слышать, Узнавать|11.02.2018|False|False|False|False|False|False|False|1|
-95|Prayers|Молитва, Мольба, Просьба|11.02.2018|False|False|False|False|False|False|False|1|
-96|Churches, Church|Церковь, Храм|11.02.2018|False|False|False|False|False|False|False|1|
-97|Want|Нужда, Желание, Хотеть, Необходимость|11.02.2018|False|False|False|False|False|False|False|1|
-98|Dream|Мечта, Мечтать, Сон, Фантазировать, Воображать, Грезить|11.02.2018|False|False|False|False|False|False|False|1|
-99|Lack|Отсутствие, Недостаток, Нужда, Не хватать|11.02.2018|False|False|False|False|False|False|False|1|
-100|Sleep|Сон, Ночевать, Засыпать, Спать|11.02.2018|False|False|False|False|False|False|False|1|
-101|When|Когда, Если, Время|11.02.2018|False|False|False|False|False|False|False|1|
-102|Know|Знать, Узнавать, Пережить, Испытать|11.02.2018|False|False|False|False|False|False|False|1|
-103|For|Для, Ради, За, В, К|11.02.2018|False|False|False|False|False|False|False|1|
-104|Wake|Просыпаться, Бодрствование, Разбудить, Осознать|11.02.2018|False|False|False|False|False|False|False|1|
-105|Morning|Утро, Утренний, Начало|11.02.2018|False|False|False|False|False|False|False|1|
-106|Act|Действовать, Акт, Поступать, Закон|11.02.2018|False|False|False|False|False|False|False|1|
-107|Your|Ваш, Твой|11.02.2018|False|False|False|False|False|False|False|1|
-108|Die|Умереть, Умерать, Скончаться|11.02.2018|False|False|False|False|False|False|False|1|
-109|Who|Кто, Который, Те, Тот|11.02.2018|False|False|False|False|False|False|False|1|
-110|Find|Находить, Обнаруживать, Находка, Считать|11.02.2018|False|False|False|False|False|False|False|1|
-111|Their|Их, Свой, Своё, Свои|11.02.2018|False|False|False|False|False|False|False|1|
-112|Busy|Занятой, Занятый, Заниматься, Деятельный, Оживлённый|11.02.2018|False|False|False|False|False|False|False|1|
-113|Schedule|Расписание, Список, План, Программа, График|11.02.2018|False|False|False|False|False|False|False|1|
-114|Never|Никогда, Не разу, Не может быть|11.02.2018|False|False|False|False|False|False|False|1|
-115|Look|Смотреть, Взгляд, Выглядеть, Вид, Взор|11.02.2018|False|False|False|False|False|False|False|1|
-116|Need|Нужда, Необходимость, Потребность|11.02.2018|False|False|False|False|False|False|False|1|
-117|Walk|Ходьба, Шаг, Походка, Тропа, Идти, Гулять|11.02.2018|False|False|False|False|False|False|False|1|
-118|Alone|Один, Одинокий, Сам, В одиночестве|11.02.2018|False|False|False|False|False|False|False|1|
-119|Cannot|Не могу, Не может (Отрицание Can)|11.02.2018|False|False|False|False|False|False|False|1|
-120|Elephant|Слон, Формат бумаги|11.02.2018|False|False|False|False|False|False|False|1|
-121|Roaming|Скитание, Странствие, Перемещение, Шатание|11.02.2018|False|False|False|False|False|False|False|1|
-122|Jungle|Джунгли, Дебри, Густые заросли|11.02.2018|False|False|False|False|False|False|False|1|
-123|Better|Лучший, Больший, Лучше, Улучшать, Полнее|11.02.2018|False|False|False|False|False|False|False|1|
-124|Those|Те, Тех, Теми (Мн. число That)|11.02.2018|False|False|False|False|False|False|False|1|
-125|Hinder|Мешать, Препятствовать, Затруднять|11.02.2018|False|False|False|False|False|False|False|1|
-126|Goes|Идёт, Движется, Проходит|11.02.2018|False|False|False|False|False|False|False|1|
-127|Pet|Домашнее животное, Ручной, Любимый, Ласкать, Баловать|11.02.2018|False|False|False|False|False|False|False|1|
-128|Shop|Магазин, Цех, Мастерска, Делать покупки|11.02.2018|False|False|False|False|False|False|False|1|
-129|Parrot|Попугай, Повторять как попугай|11.02.2018|False|False|False|False|False|False|False|1|
-130|Assistant|Ассистент, Помощник, Лаборант|11.02.2018|False|False|False|False|False|False|False|1|
-131|Section|Раздел, Секция, Часть|11.02.2018|False|False|False|False|False|False|False|1|
-132|Ask|Просить, Спрашивать, Запрашивать|11.02.2018|False|False|False|False|False|False|False|1|
-133|Man|Мужчина, Человек, Приятель|11.02.2018|False|False|False|False|False|False|False|1|
-134|Choose|Выбирать, Хотеть, Отбирать, Решать, Избирать|11.02.2018|False|False|False|False|False|False|False|1|
-135|How|Как, Каким образом, Сколько, Способ, Метод|11.02.2018|False|False|False|False|False|False|False|1|
-136|Much|Много, Гораздо, Значительно, Очень|11.02.2018|False|False|False|False|False|False|False|1|
-137|Yellow|Жёлтый, Трусливый, Ревнивый|11.02.2018|False|False|False|False|False|False|False|1|
-138|Say|Говорить, Сказать, Утверждать|11.02.2018|False|False|False|False|False|False|False|1|
-139|Shock|Шокировать, Потрясение, Шок, Удар|11.02.2018|False|False|False|False|False|False|False|1|
-140|Why|Почему, Причина, Зачем, От чего|11.02.2018|False|False|False|False|False|False|False|1|
+1|eye|Глаз, Взгляд, Око, Глазок, Взор|13.02.2018|False|False|True|True|False|False|False|3|
+2|Of|Из, От, О, Об, Для|13.02.2018|False|False|True|False|False|False|False|4|
+3|To|Для, К, В, На, До|13.02.2018|False|False|True|True|False|False|False|3|
+4|Stop|Остановка, Прекращение, Конец|14.02.2018|False|False|True|True|False|False|False|3|
+5|Love|Любовь, Влюблённость, Любить, Возлюбить, Хотеть|13.02.2018|False|False|True|True|False|False|False|3|
+6|Hour|Час|13.02.2018|False|False|True|True|False|False|False|3|
+7|Lose, Lost|Терять, Проиграть, Упускать, Утрачивать, Лишать|13.02.2018|False|False|True|True|False|False|False|3|
+8|Stay|Пребывание, Опора, Остановка, Оставаться|13.02.2018|False|False|True|False|False|False|False|3|
+9|Throw, Threw, Thrown|Бросок, Ход, Метание, Сброс, Кинуть|14.02.2018|False|False|True|True|False|False|False|3|
+10|Figure|Рисунок, Фигура, Цифра, Диаграмма, Образ|13.02.2018|False|False|True|True|False|False|False|3|
+11|Ship|Корабль, Судно|14.02.2018|False|False|True|True|False|False|False|3|
+12|Job|Работа, Задание|14.02.2018|False|False|True|True|False|False|False|3|
+13|Death|Смерть, Гибель, Конец|14.02.2018|False|False|True|True|False|False|False|3|
+14|Dog|Собака, Пёс, Преследование|14.02.2018|False|False|True|True|False|False|False|3|
+15|Bit|Долото, Кусочек, Бит|14.02.2018|False|False|True|True|False|False|False|3|
+16|Lift|Подъем, Подниматься, Лифт|14.02.2018|False|False|True|True|False|False|False|3|
+17|School|Школа, Обучение|14.02.2018|False|False|True|True|False|False|False|3|
+18|Station|Станция, Пункт|14.02.2018|False|False|True|True|False|False|False|3|
+19|Exactly|Точно, Именно, Ровно|15.02.2018|False|False|True|True|False|False|False|4|
+20|Save|Спасать, Экономить|14.02.2018|False|False|True|True|False|False|False|3|
+21|News|Новости, Известия|14.02.2018|False|False|True|True|False|False|False|3|
+22|Island|Остров|14.02.2018|False|False|True|True|False|False|False|3|
+23|Fade|Увядать, Блекнуть, Выцветать|14.02.2018|False|False|True|True|False|False|False|3|
+24|Crack|Трещать, Раскалывать|14.02.2018|False|False|True|True|False|False|False|3|
+25|Motion|Движение, Предложение, Показать жестом|14.02.2018|False|False|True|True|False|False|False|3|
+26|Quote|Цитата|14.02.2018|False|False|True|True|False|False|False|3|
+27|Two|Два, Пара|14.02.2018|False|False|True|True|False|False|False|3|
+28|Thing, Things|Вещь, Предмет, Дело, Факт|14.02.2018|False|False|True|True|False|False|False|3|
+29|Are|Быть, Находиться, Состовлять, Происходить|14.02.2018|False|False|True|True|False|False|False|3|
+30|Infinite|Бесконечный, Безграничный|14.02.2018|False|False|True|True|False|False|False|3|
+31|Universe|Космос, Мир, Человечество, Вселенная|14.02.2018|False|False|True|True|False|False|False|3|
+32|Human|Человек|14.02.2018|False|False|True|True|False|False|False|3|
+33|Sure|Конечно, Непременно, Безусловно, Верный|14.02.2018|False|False|True|False|False|False|False|3|
+34|About|О, Об, Около|14.02.2018|False|False|True|True|False|False|False|3|
+35|Stupidity|Глупость, Тупость|14.02.2018|False|False|True|True|False|False|False|3|
+36|Perfect|Идеальный, Совершенный|14.02.2018|False|False|True|True|False|False|False|3|
+37|Don't|Запрет, Не, Не надо, Перестань|14.02.2018|False|False|True|True|False|False|False|3|
+38|Wait|Ожидание, Ждать, Засада|14.02.2018|False|False|True|True|False|False|False|3|
+39|Take|Взятие, Захват, Дубль, Сбор, Выручка|14.02.2018|False|False|True|True|False|False|False|3|
+40|Make|Делать, Модель, Изготовление|14.02.2018|False|False|True|True|False|False|False|3|
+41|Change|Изменение, Смена, Замена|14.02.2018|False|False|True|True|False|False|False|3|
+42|Use|Использование, Применение|14.02.2018|False|False|True|True|False|False|False|3|
+43|But|Но, А, Однако, Зато, Только|14.02.2018|False|False|True|True|False|False|False|3|
+44|Let|Позволять, Давать, Препятствовать, Помеха|14.02.2018|False|False|True|True|False|False|False|3|
+45|There|Там, Туда, Здесь, Тут, Вон|14.02.2018|False|False|True|False|False|False|False|3|
+46|Only|Только, Лишь, Всего, Единственный|14.02.2018|False|False|True|True|False|False|False|3|
+47|Nothing|Ничего, Ничто, Мелочь|14.02.2018|False|False|True|True|False|False|False|3|
+48|Can|Может, Мочь, Жестяная банка, Болончик|14.02.2018|False|False|True|True|False|False|False|3|
+49|Be|Быть, Находиться, Должен|14.02.2018|False|False|True|True|False|False|False|3|
+50|Done|Сделанный, Обманутый, Прожаренный, Усталый|14.02.2018|False|False|True|True|False|False|False|3|
+51|Is|Есть, Является, Быть, Находиться, Состовлять|14.02.2018|False|False|True|False|False|False|False|3|
+52|Called|Называемый, Именнуемый|15.02.2018|False|False|True|True|False|False|False|3|
+53|Yesterday|Вчера, Вчерашний день, Совсем недавно|15.02.2018|False|False|True|True|False|False|False|3|
+54|Other|Другой, Иной, Остальные|15.02.2018|False|False|True|True|False|False|False|3|
+55|Tomorrow|Завтра, Завтрашний день, Завтрашний|15.02.2018|False|False|True|True|False|False|False|3|
+56|Today|Сегодня, В наши дни, В настоящее время, Сегодняшний день|15.02.2018|False|False|True|True|False|False|False|3|
+57|Believe|Верить, Доверять, Думать, Полагать|15.02.2018|False|False|True|True|False|False|False|4|
+58|Do|Делать, Выполнять|15.02.2018|False|False|True|False|False|False|False|3|
+59|Mostly|Главным образом, По большей части, Обычно, Обыкновенно|15.02.2018|False|False|False|False|False|False|False|5|
+60|Live|Жить, Живой, В прямом эфире|15.02.2018|False|False|True|True|False|False|False|3|
+61|Success|Удача, Успех, Достижение|15.02.2018|False|False|True|True|False|False|False|3|
+62|Key|Ключ, Главный, Основной, Ключевой|15.02.2018|False|False|True|True|False|False|False|3|
+63|Happiness|Счастье, Радость|15.02.2018|False|False|True|True|False|False|False|3|
+64|Doing|Дела, Поступки, Действия|15.02.2018|False|False|True|True|False|False|False|3|
+65|What|Что, Какой, Сколько|15.02.2018|False|False|True|False|False|False|False|4|
+66|Will|Воля, Желание, Завещать|15.02.2018|False|False|True|True|False|False|False|3|
+67|Successful|Удачный, Удачливый, Успешный, Преуспевающий|15.02.2018|False|False|True|True|False|False|False|3|
+68|Minds, Mind|Память, Разум, Ум|15.02.2018|False|False|True|True|False|False|False|3|
+69|Discuss|Обсуждать, Дискутировать, Спорить|15.02.2018|False|False|True|True|False|False|False|3|
+70|Ideas|Идея, Мысли, Понятия|15.02.2018|False|False|True|True|False|False|False|3|
+71|Average|Средний, Обычный|13.02.2018|False|False|True|False|False|False|False|3|
+72|Events|Событие, Случай, Проишествие|15.02.2018|False|False|True|True|False|False|False|3|
+73|Small|Маленький, Небольшой, Малый|15.02.2018|False|False|True|True|False|False|False|3|
+74|People|Люди, Народ, Жители, Нация|15.02.2018|False|False|True|True|False|False|False|3|
+75|Journey|Путешествие, Поездка|15.02.2018|False|False|True|True|False|False|False|3|
+76|Miles, Mile|Миля|15.02.2018|False|False|True|True|False|False|False|3|
+77|Begins, Begin|Начинать, Начинаться|15.02.2018|False|False|True|True|False|False|False|3|
+78|With|С, Вместе с, От|13.02.2018|False|False|True|False|False|False|False|3|
+79|Single|Единственный, Один, Единый|13.02.2018|False|False|True|False|False|False|False|3|
+80|Thousand|Тысяча, Множество, Масса|15.02.2018|False|False|True|True|False|False|False|3|
+81|Step|Шаг, Шагать, Ступень|15.02.2018|False|False|True|True|False|False|False|3|
+82|This|Этот, Это, Эта|15.02.2018|False|False|True|True|False|False|False|3|
+83|Airport, Airports|Аэропорт, Аэропорты|15.02.2018|False|False|True|True|False|False|False|3|
+84|See|Видеть, Смотреть, Престол, Епархия|15.02.2018|False|False|True|True|False|False|False|3|
+85|More|Более, Большой, Ещё, Больший, Подробнее, Дополнительный|15.02.2018|False|False|True|True|False|False|False|3|
+86|Sincere|Искренний, Чистосердечный, Правдивый, Честный, Душевный|13.02.2018|False|False|True|False|False|False|False|3|
+87|Kiss, Kisses|Поцелуй, Целовать, Поцеловаться|15.02.2018|False|False|True|True|False|False|False|3|
+88|Than|Чем, Кроме, Как, Чтобы|15.02.2018|False|False|True|True|False|False|False|3|
+89|Wedding|Свадьба, Свадебный, Бракосочетание, Венчание, Венчальный|15.02.2018|False|False|True|True|False|False|False|3|
+90|Halls, Hall|Зал(ы), Хол, Коридор, Приёмная, Усадьба|15.02.2018|False|False|True|True|False|False|False|3|
+91|Walls, Wall|Стена, Барьер|13.02.2018|False|False|True|False|False|False|False|3|
+92|Hospitals, Hospital|Больница, Госпиталь|15.02.2018|False|False|True|True|False|False|False|3|
+93|Have|Иметь, Обладать, Получать, Содержать|15.02.2018|False|False|True|True|False|False|False|3|
+94|Heard, Hear|Услышать, Слышать, Узнавать|13.02.2018|False|False|True|False|False|False|False|3|
+95|Prayers|Молитва, Мольба, Просьба|15.02.2018|False|False|True|True|False|False|False|3|
+96|Churches, Church|Церковь, Храм|15.02.2018|False|False|True|True|False|False|False|3|
+97|Want|Нужда, Желание, Хотеть, Необходимость|15.02.2018|False|False|False|False|False|False|False|4|
+98|Dream|Мечта, Мечтать, Сон, Фантазировать, Воображать, Грезить|13.02.2018|False|False|True|False|False|False|False|3|
+99|Lack|Отсутствие, Недостаток, Нужда, Не хватать|15.02.2018|False|False|False|False|False|False|False|4|
+100|Sleep|Сон, Ночевать, Засыпать, Спать|15.02.2018|False|False|True|True|False|False|False|3|
+101|When|Когда, Если, Время|15.02.2018|False|False|False|False|False|False|False|4|
+102|Know|Знать, Узнавать, Пережить, Испытать|15.02.2018|False|False|True|True|False|False|False|3|
+103|For|Для, Ради, За, В, К|15.02.2018|False|False|True|False|False|False|False|4|
+104|Wake|Просыпаться, Бодрствование, Разбудить, Осознать|15.02.2018|False|False|True|True|False|False|False|3|
+105|Morning|Утро, Утренний, Начало|15.02.2018|False|False|True|True|False|False|False|3|
+106|Act|Действовать, Акт, Поступать, Закон|15.02.2018|False|False|True|True|False|False|False|3|
+107|Your|Ваш, Твой|15.02.2018|False|False|True|True|False|False|False|3|
+108|Die|Умереть, Умерать, Скончаться|15.02.2018|False|False|True|False|False|False|False|4|
+109|Who|Кто, Который, Те, Тот|15.02.2018|False|False|False|False|False|False|False|4|
+110|Find|Находить, Обнаруживать, Находка, Считать|15.02.2018|False|False|True|True|False|False|False|3|
+111|Their|Их, Свой, Своё, Свои|13.02.2018|False|False|True|False|False|False|False|3|
+112|Busy|Занятой, Занятый, Заниматься, Деятельный, Оживлённый|13.02.2018|False|False|True|False|False|False|False|3|
+113|Schedule|Расписание, Список, План, Программа, График|15.02.2018|False|False|True|True|False|False|False|3|
+114|Never|Никогда, Не разу, Не может быть|15.02.2018|False|False|True|False|False|False|False|4|
+115|Look|Смотреть, Взгляд, Выглядеть, Вид, Взор|15.02.2018|False|False|False|False|False|False|False|4|
+116|Need|Нужда, Необходимость, Потребность|15.02.2018|False|False|True|False|False|False|False|4|
+117|Walk|Ходьба, Шаг, Походка, Тропа, Идти, Гулять|15.02.2018|False|False|True|False|False|False|False|4|
+118|Alone|Один, Одинокий, Сам, В одиночестве|15.02.2018|False|False|True|True|False|False|False|3|
+119|Cannot|Не могу, Не может (Отрицание Can)|15.02.2018|False|False|True|True|False|False|False|3|
+120|Elephant|Слон, Формат бумаги|15.02.2018|False|False|True|True|False|False|False|3|
+121|Roaming|Скитание, Странствие, Перемещение, Шатание|15.02.2018|False|False|True|False|False|False|False|4|
+122|Jungle|Джунгли, Дебри, Густые заросли|15.02.2018|False|False|True|True|False|False|False|3|
+123|Better|Лучший, Больший, Лучше, Улучшать, Полнее|15.02.2018|False|False|False|False|False|False|False|4|
+124|Those|Те, Тех, Теми (Мн. число That)|13.02.2018|False|False|True|False|False|False|False|3|
+125|Hinder|Мешать, Препятствовать, Затруднять|13.02.2018|False|False|True|False|False|False|False|3|
+126|Goes|Идёт, Движется, Проходит|15.02.2018|False|False|True|False|False|False|False|4|
+127|Pet|Домашнее животное, Ручной, Любимый, Ласкать, Баловать|13.02.2018|False|False|True|False|False|False|False|3|
+128|Shop|Магазин, Цех, Мастерска, Делать покупки|15.02.2018|False|False|True|True|False|False|False|3|
+129|Parrot|Попугай, Повторять как попугай|15.02.2018|False|False|True|True|False|False|False|3|
+130|Assistant|Ассистент, Помощник, Лаборант|15.02.2018|False|False|True|True|False|False|False|3|
+131|Section|Раздел, Секция, Часть|13.02.2018|False|False|True|False|False|False|False|3|
+132|Ask|Просить, Спрашивать, Запрашивать|15.02.2018|False|False|True|False|False|False|False|4|
+133|Man|Мужчина, Человек, Приятель|15.02.2018|False|False|True|True|False|False|False|3|
+134|Choose|Выбирать, Хотеть, Отбирать, Решать, Избирать|15.02.2018|False|False|True|False|False|False|False|4|
+135|How|Как, Каким образом, Сколько, Способ, Метод|15.02.2018|False|False|False|False|False|False|False|4|
+136|Much|Много, Гораздо, Значительно, Очень|15.02.2018|False|False|False|False|False|False|False|4|
+137|Yellow|Жёлтый, Трусливый, Ревнивый|13.02.2018|False|False|True|False|False|False|False|3|
+138|Say|Говорить, Сказать, Утверждать|13.02.2018|False|False|True|False|False|False|False|3|
+139|Shock|Шокировать, Потрясение, Шок, Удар|13.02.2018|False|False|True|False|False|False|False|3|
+140|Why|Почему, Причина, Зачем, От чего|13.02.2018|False|False|True|False|False|False|False|3|
+141|So|Так, Таким образом, Поэтому|15.02.2018|False|False|False|False|False|False|False|3|
+142|Expensive|Дорогой, Дорогостоящий|13.02.2018|False|False|True|False|False|False|False|2|
+143|Explain|Объяснить, Растолковать, Оправдывать|15.02.2018|False|False|False|False|False|False|False|3|
+144|Very|Очень, Даже, Самый, Истинный|13.02.2018|False|False|True|False|False|False|False|2|
+145|Typewriting|Печатание на машинке, Машинопись|13.02.2018|False|False|True|False|False|False|False|2|
+146|Type|Тип, Разновидность, Модель, Шрифт, Печатать|13.02.2018|False|False|True|False|False|False|False|2|
+147|Really|Действительно, В самом деле, Впрямь|13.02.2018|False|False|True|False|False|False|False|2|
+148|Fast|Скорый, Быстрый, Голодать|13.02.2018|False|False|True|False|False|False|False|2|
+149|Green|Зелёный, Сырой, Свежый, Зелень|13.02.2018|False|False|True|False|False|False|False|2|
+150|He|Он, Него, Мужчина, Водящий|13.02.2018|False|False|True|False|False|False|False|2|
+151|Cost|Стоить, Обходится, Стоимость, Цена, Расходы|13.02.2018|False|False|True|False|False|False|False|2|
+152|Because|Потому что, Так как, Ибо|15.02.2018|False|False|False|False|False|False|False|3|
+153|Answer|Ответ, Решение, Отвечать, Возражение, Реагировать|15.02.2018|False|False|False|False|False|False|False|2|
+154|Incoming|Входящий, Поступающий, Доходы, Прибытие, Приход|12.02.2018|False|False|False|False|False|False|False|1|
+155|Telephone|Телефон, Телефонный|12.02.2018|False|False|False|False|False|False|False|1|
+156|Call|Называть, Вызывать, Призыв, Вызов, Требование|12.02.2018|False|False|False|False|False|False|False|1|
+157|Note|Записка, Примечание, Замечание, Внимание, Указывать|12.02.2018|False|False|False|False|False|False|False|1|
+158|Red|Красный, Алый, Рыжий, Багровый, Багряный|12.02.2018|False|False|False|False|False|False|False|1|
