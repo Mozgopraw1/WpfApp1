@@ -95,7 +95,7 @@ namespace WpfApp1
             }
         }
 
-
+         
         DateTime data1, data2, data3;
         string eng, rus, stroka, vrem, slovoeng, slovorus;
         Boolean fgot = false, fgot1 = false, den1 = false, den3 = false, den7 = false, den21 = false, den50 = false;
