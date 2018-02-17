@@ -74,20 +74,17 @@ namespace WpfApp1
                     flagknop = 1;
                     if (i == num)           // не работает следующее слово, остаётся на старом слове
                     {
+                        i++;
                         if (data1 == data2)
                         {
                             TextBlock1.Text = eng;
                             ii = 1;
-                            i++;
                         }
                     }
                     if (ii == 1)
                     {
                         break;
                     }
-
-                    i++;
-                    
                 }
                 if (ii == 0)
                 {
