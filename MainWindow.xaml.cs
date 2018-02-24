@@ -28,78 +28,11 @@ namespace WpfApp1
         {
             flagknop = 1;
             sbrosprov = 1;
-            vrem = Convert.ToString(i);
-            Test.Text = vrem;
+            i = 0;
         }
 
         private void SlovaSeg_Click(object sender, RoutedEventArgs e)
         {
-            /*using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
-            {
-                ii = 0;
-                while ((stroka = sw.ReadLine()) != null)
-                {
-                    index = stroka.IndexOf('|');
-                    vrem = stroka.Substring(0, index);
-                    num = Convert.ToInt32(vrem);
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    eng = stroka.Substring(0, index);
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    rus = stroka.Substring(0, index);
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
-                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
-                    stroka = stroka.Remove(0, index + 1);
-                    index = stroka.IndexOf('|');
-                    vrem = stroka.Substring(0, index);
-                    ploh = Convert.ToInt32(vrem);
-                    data2 = DateTime.Today;
-                    flagknop = 1;
-                    if (i == num)           
-                    {
-                        i++;
-                        if (data1 == data2)
-                        {
-                            TextBlock1.Text = eng;
-                            ii = 1;
-                        }
-                    }
-                    if (ii == 1)
-                    {
-                        break;
-                    }
-                }
-                if (ii == 0)
-                {
-                    num++;
-                    TextBlock1.Text = "Не найдено слов на проверку из: " + num;
-                    i = 0;
-                }
-            } */
             using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
             {
                 ii = 0;
@@ -152,6 +85,7 @@ namespace WpfApp1
                     { i = 0;
 
                     }
+                    sbrosprov = 0;
                     if (i == num)
                     {
                         i++;
@@ -233,11 +167,12 @@ namespace WpfApp1
                         ii++;
                         break;
                     }
-                } // Не работает
+                } // Вроде работает, нужен тест
                 if (ii == 0)
                 {
                     vrem1 = num;
                     vrem1++;
+
                     TextBlock1.Text = "Не найдено слов на проверку из: " + vrem1;
                 }
             }
