@@ -34,7 +34,6 @@
             <ComboBoxItem x:Name="Day21" Content="Day 21"/>
             <ComboBoxItem x:Name="Day50" Content="Day 50"/>
         </ComboBox>
-        <TextBlock x:Name="Test" HorizontalAlignment="Left" Margin="101,280,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
