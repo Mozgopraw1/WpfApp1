@@ -23,6 +23,7 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         int num, index, ploh, i = 0, ii = 0, a, b, c, d, v, flagknop = 0, sbrosprov = 0, vrem1, but2flag;
+        int NewSlov, Day1Slov, Day3Slov, Day7Slov, Day21Slov, Day50Slov; // TZ 2
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -152,11 +153,8 @@ namespace WpfApp1
                         {
                             if (den50 == true)
                             {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 0; b = 0; c = 0; d = 0; v = 1;
-                                }
+                                fgot = true;
+                                a = 0; b = 0; c = 0; d = 0; v = 1;
                             }
                         }
                     }
@@ -399,6 +397,72 @@ namespace WpfApp1
         {
             InitializeComponent();
 
+            using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
+            {
+                while ((stroka = sw.ReadLine()) != null)
+                {
+
+
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    num = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    eng = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    rus = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
+                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    ploh = Convert.ToInt32(vrem);
+                    data2 = DateTime.Today;
+                    
+                    if (den1 == false)
+                        NewSlov++;
+                    if (den1 == true & den3 == false)
+                        Day1Slov++;
+                    if (den3 == true & den7 == false)
+                        Day3Slov++;
+                    if (den7 == true & den21 == false)
+                        Day7Slov++;
+                    if (den21 == true & den50 == false)
+                        Day21Slov++;
+                    if (den50 == true)
+                        Day50Slov++;
+                    NewText.Text = "Новых слов: " + NewSlov;
+                    Day1Text.Text = "Day1: " + Day1Slov;
+                    Day3Text.Text = "Day3: " + Day3Slov;
+                    Day7Text.Text = "Day7: " + Day7Slov;
+                    Day21Text.Text = "Day21: " + Day21Slov;
+                    Day50Text.Text = "Day50: " + Day50Slov;
+                }
+            }
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
