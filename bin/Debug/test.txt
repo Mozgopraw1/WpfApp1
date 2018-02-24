@@ -1,4 +1,4 @@
 0|Английское слово|Перевод|20.02.2018|False|False|True|True|False|False|False|27|
-1|Английское слово001|Перевод|21.02.2018|False|False|False|False|False|False|False|1|
+1|Английское слово001|Перевод|24.02.2018|False|False|True|False|False|False|False|2|
 2|Английское слово002|Перевод|24.02.2018|False|False|True|False|False|False|False|3|
 3|Английское слово003|Перевод|24.02.2018|False|False|False|False|False|False|False|2|

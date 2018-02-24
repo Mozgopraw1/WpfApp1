@@ -22,7 +22,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        int num, index, ploh, i = 0, ii = 0, a, b, c, d, v, flagknop = 0, sbrosprov = 0, vrem1;
+        int num, index, ploh, i = 0, ii = 0, a, b, c, d, v, flagknop = 0, sbrosprov = 0, vrem1, but2flag;
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -178,206 +178,213 @@ namespace WpfApp1
             }
         }
 
-         
+
         DateTime data1, data2, data3;
         string eng, rus, stroka, vrem, slovoeng, slovorus;
         Boolean fgot = false, fgot1 = false, den1 = false, den3 = false, den7 = false, den21 = false, den50 = false;
 
         private void Net_Click(object sender, RoutedEventArgs e)
         {
-            if (flagknop == 0)
+            if (but2flag == 1)
             {
-                string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
-                fgot = false;
-                if (a == 1)
+                but2flag = 0;
+                if (flagknop == 0)
                 {
-                    den1 = false;
+                    string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
+                    fgot = false;
+                    if (a == 1)
+                    {
+                        den1 = false;
+                        data1 = DateTime.Today;
+                    }
+                    else
+                    if (b == 1)
+                    {
+                        den3 = false;
+                        data1 = DateTime.Today;
+                    }
+                    else
+                    if (c == 1)
+                    {
+                        den7 = false;
+                        data1 = DateTime.Today;
+                    }
+                    else
+                    if (d == 1)
+                    {
+                        den21 = false;
+                        data1 = DateTime.Today;
+                    }
+                    else
+                    if (v == 1)
+                    {
+                        den50 = false;
+                        data1 = DateTime.Today;
+                    }
+                    stroka = lines[num];
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    num = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    eng = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    rus = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
+                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    ploh = Convert.ToInt32(vrem);
+                    ploh++;
                     data1 = DateTime.Today;
+                    stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                    lines[num] = stroka;
+                    string file1 = "test.txt";
+                    File.WriteAllLines(file1, lines, Encoding.Default);
+                    a = 0; b = 0; c = 0; d = 0; v = 0;
+                    TextBlock2.Text = "Повторений: " + ploh;
+                    TextBlock1.Text = eng + " - " + rus;
                 }
-                else
-                if (b == 1)
+                if (flagknop == 1)
                 {
-                    den3 = false;
-                    data1 = DateTime.Today;
+                    string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
+                    fgot = false;
+                    stroka = lines[num];
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    num = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    eng = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    rus = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
+                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    ploh = Convert.ToInt32(vrem);
+                    ploh++;
+                    stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                    lines[num] = stroka;
+                    string file1 = "test.txt";
+                    File.WriteAllLines(file1, lines, Encoding.Default);
+                    TextBlock2.Text = "Повторений: " + ploh;
+                    TextBlock1.Text = eng + " - " + rus;
                 }
-                else
-                if (c == 1)
-                {
-                    den7 = false;
-                    data1 = DateTime.Today;
-                }
-                else
-                if (d == 1)
-                {
-                    den21 = false;
-                    data1 = DateTime.Today;
-                }
-                else
-                if (v == 1)
-                {
-                    den50 = false;
-                    data1 = DateTime.Today;
-                }
-                stroka = lines[num];
-                index = stroka.IndexOf('|');
-                vrem = stroka.Substring(0, index);
-                num = Convert.ToInt32(vrem);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                eng = stroka.Substring(0, index);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                rus = stroka.Substring(0, index);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                data1 = Convert.ToDateTime(stroka.Substring(0, index));
-                TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                fgot = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den1 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den3 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den7 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den21 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den50 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                vrem = stroka.Substring(0, index);
-                ploh = Convert.ToInt32(vrem);
-                ploh++;
-                data1 = DateTime.Today;
-                stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                    + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
-                lines[num] = stroka;
-                string file1 = "test.txt";
-                File.WriteAllLines(file1, lines, Encoding.Default);
-                a = 0; b = 0; c = 0; d = 0; v = 0;
-                TextBlock2.Text = "Повторений: " + ploh;
-                TextBlock1.Text = eng + " - " + rus;
-            }
-            if (flagknop == 1)
-            {
-                string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
-                fgot = false;
-                stroka = lines[num];
-                index = stroka.IndexOf('|');
-                vrem = stroka.Substring(0, index);
-                num = Convert.ToInt32(vrem);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                eng = stroka.Substring(0, index);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                rus = stroka.Substring(0, index);
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                data1 = Convert.ToDateTime(stroka.Substring(0, index));
-                TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                fgot = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den1 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den3 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den7 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den21 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                den50 = Convert.ToBoolean(stroka.Substring(0, index));
-                stroka = stroka.Remove(0, index + 1);
-                index = stroka.IndexOf('|');
-                vrem = stroka.Substring(0, index);
-                ploh = Convert.ToInt32(vrem);
-                ploh++;
-                stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                    + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
-                lines[num] = stroka;
-                string file1 = "test.txt";
-                File.WriteAllLines(file1, lines, Encoding.Default);
-                TextBlock2.Text = "Повторений: " + ploh;
-                TextBlock1.Text = eng + " - " + rus;
-            }
+            } else { TextBlock2.Text = "Сначала подтвердите слово"; }
         }
 
         private void Da_Click(object sender, RoutedEventArgs e)
         {
 
-
-            if (flagknop == 0)
+            if (but2flag == 1)
             {
-                string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
-                fgot = false;
-                if (a == 1)
+                but2flag = 0;
+                if (flagknop == 0)
                 {
-                    den1 = true;
-                    data1 = DateTime.Today;
-                    ploh++;
-                }
-                else
-                if (b == 1)
-                {
-                    den3 = true;
-                    data1 = DateTime.Today;
-                    ploh++;
-                }
-                else
-                if (c == 1)
-                {
-                    den7 = true;
-                    data1 = DateTime.Today;
-                    ploh++;
-                }
-                else
-                if (d == 1)
-                {
-                    den21 = true;
-                    data1 = DateTime.Today;
-                    ploh++;
-                }
-                else
-                if (v == 1)
-                {
-                    den50 = true;
-                    data1 = DateTime.Today;
-                    ploh++;
-                }
+                    string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
+                    fgot = false;
+                    if (a == 1)
+                    {
+                        den1 = true;
+                        data1 = DateTime.Today;
+                        ploh++;
+                    }
+                    else
+                    if (b == 1)
+                    {
+                        den3 = true;
+                        data1 = DateTime.Today;
+                        ploh++;
+                    }
+                    else
+                    if (c == 1)
+                    {
+                        den7 = true;
+                        data1 = DateTime.Today;
+                        ploh++;
+                    }
+                    else
+                    if (d == 1)
+                    {
+                        den21 = true;
+                        data1 = DateTime.Today;
+                        ploh++;
+                    }
+                    else
+                    if (v == 1)
+                    {
+                        den50 = true;
+                        data1 = DateTime.Today;
+                        ploh++;
+                    }
 
-                stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                    + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
-                lines[num] = stroka;
+                    stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                    lines[num] = stroka;
 
-                string file1 = "test.txt";
-                File.WriteAllLines(file1, lines, Encoding.Default);
-                a = 0; b = 0; c = 0; d = 0; v = 0;
-                TextBlock2.Text = "Слово прошло проверку";
-            }
-            if (flagknop == 1)
-            {
-                TextBlock2.Text = "Слово прошло проверку";
-            }
+                    string file1 = "test.txt";
+                    File.WriteAllLines(file1, lines, Encoding.Default);
+                    a = 0; b = 0; c = 0; d = 0; v = 0;
+                    TextBlock2.Text = "Слово прошло проверку";
+                }
+                if (flagknop == 1)
+                {
+                    TextBlock2.Text = "Слово прошло проверку";
+                }
+            } else { TextBlock2.Text = "Сначала подтвердите слово"; }
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
@@ -385,6 +392,7 @@ namespace WpfApp1
             slovoeng = TextBlock1.Text;
             slovorus = TextBox2.Text;
             TextBlock2.Text = rus;
+            but2flag = 1;
         }
 
         public MainWindow()
@@ -430,254 +438,120 @@ namespace WpfApp1
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
 
-            if (flagknop == 0)
+            using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
             {
+                ii = 0;
 
-                using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
+                while ((stroka = sw.ReadLine()) != null)
                 {
-                    ii = 0;
 
-                    while ((stroka = sw.ReadLine()) != null)
+
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    num = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    eng = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    rus = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
+                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    ploh = Convert.ToInt32(vrem);
+                    data2 = DateTime.Today;
+                    flagknop = 0;
+                    if (den1 == false)
                     {
-
-
-                        index = stroka.IndexOf('|');
-                        vrem = stroka.Substring(0, index);
-                        num = Convert.ToInt32(vrem);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        eng = stroka.Substring(0, index);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        rus = stroka.Substring(0, index);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        data1 = Convert.ToDateTime(stroka.Substring(0, index));
-                        TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        fgot = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den1 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den3 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den7 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den21 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den50 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        vrem = stroka.Substring(0, index);
-                        ploh = Convert.ToInt32(vrem);
-                        data2 = DateTime.Today;
-                        flagknop = 0;
-                        if (den1 == false)
+                        data1 = data1.AddDays(1);
+                        if (data2 >= data1)
                         {
-                            data1 = data1.AddDays(1);
-                            if (data2 >= data1)
-                            {
-                                fgot = true;
-                                a = 1; b = 0; c = 0; d = 0; v = 0;
-                            }
-                        }
-                        else
-                        if (den3 == false)
-                        {
-                            data1 = data1.AddDays(3);
-                            if (data2 >= data1)
-                            {
-                                fgot = true;
-                                a = 0; b = 1; c = 0; d = 0; v = 0;
-                            }
-                        }
-                        else
-                        if (den7 == false)
-                        {
-                            data1 = data1.AddDays(7);
-                            if (data2 >= data1)
-                            {
-                                fgot = true;
-                                a = 0; b = 0; c = 1; d = 0; v = 0;
-                            }
-                        }
-                        else
-                        if (den21 == false)
-                        {
-                            data1 = data1.AddDays(21);
-                            if (data2 >= data1)
-                            {
-                                fgot = true;
-                                a = 0; b = 0; c = 0; d = 1; v = 0;
-                            }
-                        }
-                        else
-                        if (den50 == false)
-                        {
-                            data1 = data1.AddDays(50);
-                            if (data2 >= data1)
-                            {
-                                fgot = true;
-                                a = 0; b = 0; c = 0; d = 0; v = 1;
-                            }
-                        }
-                        if (fgot == true)
-                        {
-                            TextBlock1.Text = eng;
-                            ii++;
-                            sw.Close();
-                            break;
+                            fgot = true;
+                            a = 1; b = 0; c = 0; d = 0; v = 0;
                         }
                     }
-                    if (ii == 0)
+                    else
+                    if (den3 == false)
                     {
-                        num++;
-                        TextBlock1.Text = "Не найдено слов на проверку из: " + num;
+                        data1 = data1.AddDays(3);
+                        if (data2 >= data1)
+                        {
+                            fgot = true;
+                            a = 0; b = 1; c = 0; d = 0; v = 0;
+                        }
+                    }
+                    else
+                    if (den7 == false)
+                    {
+                        data1 = data1.AddDays(7);
+                        if (data2 >= data1)
+                        {
+                            fgot = true;
+                            a = 0; b = 0; c = 1; d = 0; v = 0;
+                        }
+                    }
+                    else
+                    if (den21 == false)
+                    {
+                        data1 = data1.AddDays(21);
+                        if (data2 >= data1)
+                        {
+                            fgot = true;
+                            a = 0; b = 0; c = 0; d = 1; v = 0;
+                        }
+                    }
+                    else
+                    if (den50 == false)
+                    {
+                        data1 = data1.AddDays(50);
+                        if (data2 >= data1)
+                        {
+                            fgot = true;
+                            a = 0; b = 0; c = 0; d = 0; v = 1;
+                        }
+                    }
+                    if (fgot == true)
+                    {
+                        TextBlock1.Text = eng;
+                        ii++;
+                        sw.Close();
+                        break;
                     }
                 }
-            }
-            if (flagknop == 1)
-            {
-                using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
+                if (ii == 0)
                 {
-                    ii = 0;
-
-                    while ((stroka = sw.ReadLine()) != null)
-                    {
-
-
-                        index = stroka.IndexOf('|');
-                        vrem = stroka.Substring(0, index);
-                        num = Convert.ToInt32(vrem);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        eng = stroka.Substring(0, index);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        rus = stroka.Substring(0, index);
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        data1 = Convert.ToDateTime(stroka.Substring(0, index));
-                        TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        fgot = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den1 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den3 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den7 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den21 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        den50 = Convert.ToBoolean(stroka.Substring(0, index));
-                        stroka = stroka.Remove(0, index + 1);
-                        index = stroka.IndexOf('|');
-                        vrem = stroka.Substring(0, index);
-                        ploh = Convert.ToInt32(vrem);
-                        data2 = DateTime.Today;
-                        flagknop = 0;
-                        if (ChangeDay.Text == "New")
-                        {
-                            if (den1 == false)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 1; b = 0; c = 0; d = 0; v = 0;
-                                }
-                            }
-                        }
-                        if (ChangeDay.Text == "Day 1")
-                        {
-                            if (den3 == false)
-                            if (den1 == true)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 1; b = 0; c = 0; d = 0; v = 0;
-                                }
-                            }
-                        }
-                        if (ChangeDay.Text == "Day 3")
-                        {
-                            if (den3 == true)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 0; b = 1; c = 0; d = 0; v = 0;
-                                }
-                            }
-                        }
-                        if (ChangeDay.Text == "Day 7")
-                        {
-                            if (den7 == true)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 0; b = 0; c = 1; d = 0; v = 0;
-                                }
-                            }
-                        }
-                        if (ChangeDay.Text == "Day 21")
-                        {
-                            if (den21 == true)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 0; b = 0; c = 0; d = 1; v = 0;
-                                }
-                            }
-                        }
-                        if (ChangeDay.Text == "Day 50")
-                        {
-                            if (den1 == true)
-                            {
-                                if (data2 == data1)
-                                {
-                                    fgot = true;
-                                    a = 0; b = 0; c = 0; d = 0; v = 1;
-                                }
-                            }
-                        }
-                        if (fgot == true)
-                        {
-                            TextBlock1.Text = eng;
-                            ii++;
-                            sw.Close();
-                            break;
-                        }
-                    }
-                    if (ii == 0)
-                    {
-                        num++;
-                        TextBlock1.Text = "Не найдено слов на проверку из: " + num;
-                    }
+                    num++;
+                    TextBlock1.Text = "Не найдено слов на проверку из: " + num;
                 }
             }
-
         }
     }
+
+
 }
+
