@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="EnglishAssistent" Height="466.667" Width="746.569"
+        Title="EnglishAssistent" Height="706.667" Width="969.569"
         Icon="united-kingdom-flag-16x16.ico">
 
-    <Grid Margin="0,0,-291,-162">
+    <Grid Margin="0,0,-291,-78">
         <Grid.ColumnDefinitions>
             <!--  <ColumnDefinition Width="320*"/>
             <ColumnDefinition Width="197*"/> -->
@@ -39,7 +39,23 @@
         <TextBlock x:Name="Day3Text" HorizontalAlignment="Left" Margin="459,202,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="134"/>
         <TextBlock x:Name="Day7Text" HorizontalAlignment="Left" Margin="459,237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="134"/>
         <TextBlock x:Name="Day21Text" HorizontalAlignment="Left" Margin="459,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="134"/>
-        <TextBlock x:Name="Day50Text" HorizontalAlignment="Left" Margin="459,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="134"/>
+        <TextBlock x:Name="Day50Text" HorizontalAlignment="Left" Margin="459,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="134"/>
+        <Button x:Name="Search" Content="Search" HorizontalAlignment="Left" Margin="160,307,0,0" VerticalAlignment="Top" Width="120" Click="Search_Click"/>
+        <Button x:Name="Save" Content="Save" HorizontalAlignment="Left" Margin="7,307,0,0" VerticalAlignment="Top" Width="120" Click="Save_Click"/>
+        <ComboBox x:Name="ChangeSave" HorizontalAlignment="Left" Margin="296,307,0,0" VerticalAlignment="Top" Width="142" SelectionChanged="ComboBox_SelectionChanged_1">
+            <ComboBoxItem x:Name="EngSave" Content="EngSave"/>
+            <ComboBoxItem x:Name="RusSave" Content="RusSave"/>
+            <ComboBoxItem x:Name="DataSave" Content="DataSave"/>
+            <ComboBoxItem x:Name="Flag1Save" Content="Flag1Save"/>
+            <ComboBoxItem x:Name="Flag2Save" Content="Flag2Save"/>
+            <ComboBoxItem x:Name="Day1Save" Content="Day1Save"/>
+            <ComboBoxItem x:Name="Day3Save" Content="Day3Save"/>
+            <ComboBoxItem x:Name="Day7Save" Content="Day7Save"/>
+            <ComboBoxItem x:Name="Day21Save" Content="Day21Save"/>
+            <ComboBoxItem x:Name="Day50Save" Content="Day50Save"/>
+            <ComboBoxItem x:Name="PovtSave" Content="PovtSave"/>
+            <ComboBoxItem x:Name="NoLuckySave" Content="NoLuckySave"/>
+        </ComboBox>
 
     </Grid>
 </Window>

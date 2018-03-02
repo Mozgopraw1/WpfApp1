@@ -23,6 +23,119 @@ namespace WpfApp1
     public partial class MainWindow : Window
     {
         int num, index, ploh, i = 0, ii = 0, a, b, c, d, v, flagknop = 0, sbrosprov = 0, vrem1, but2flag;
+
+        private void Search_Click(object sender, RoutedEventArgs e)
+        {
+            using (StreamReader sw = new StreamReader("test.txt", Encoding.Default))
+            {
+                ii = 0;
+
+                while ((stroka = sw.ReadLine()) != null)
+                {
+
+
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    num = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    eng = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    rus = stroka.Substring(0, index);
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    data1 = Convert.ToDateTime(stroka.Substring(0, index));
+                    TextBlock2.Text = Convert.ToString(data1.ToShortDateString());   // Дата
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    fgot1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den1 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den3 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den7 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den21 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    den50 = Convert.ToBoolean(stroka.Substring(0, index));
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    ploh = Convert.ToInt32(vrem);
+                    data2 = DateTime.Today;
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    NoLucky = Convert.ToInt32(vrem);
+                    slovoeng = TextBlock1.Text;
+                    if (slovoeng == eng)
+                    {
+                        TextBlock2.Text = "Слово найдено";
+                        ii++;
+                        sw.Close();
+                        break;
+                    }
+                }
+                if (ii == 0)
+                {
+                    num++;
+                    TextBlock1.Text = "Слово не найдено ";
+                }
+            }
+        }
+
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+            string[] lines = System.IO.File.ReadAllLines("test.txt", Encoding.Default);
+            if (ChangeSave.Text == "SlovoEng")
+                eng = TextBlock1.Text;
+            if (ChangeSave.Text == "SlovoRus")
+                rus = TextBlock2.Text;
+            if (ChangeSave.Text == "DataSave")
+                data1 = Convert.ToDateTime(TextBlock2.Text);
+            if (ChangeSave.Text == "Flag1Save")
+                fgot = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Flag2Save")
+                fgot1 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Day1Save")
+                den1 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Day3Save")
+                den3 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Day7Save")
+                den7 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Day21Save")
+                den21 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "Day50Save")
+                den50 = Convert.ToBoolean(TextBlock2.Text);
+            if (ChangeSave.Text == "ProvSave")
+                ploh = Convert.ToInt32(TextBlock2.Text);
+            if (ChangeSave.Text == "NoLackySave")
+                NoLucky = Convert.ToInt32(TextBlock2.Text);
+            stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
+                + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|' + NoLucky + '|';
+            lines[num] = stroka;
+
+            string file1 = "test.txt";
+            File.WriteAllLines(file1, lines, Encoding.Default);
+            a = 0; b = 0; c = 0; d = 0; v = 0;
+            TextBlock2.Text = "Слово прошло проверку";
+        }
+
+        private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
         int NewSlov, Day1Slov, Day3Slov, Day7Slov, Day21Slov, Day50Slov; // TZ 2
         int NoLucky; // Флаг повторной не сдачи слов.
 
