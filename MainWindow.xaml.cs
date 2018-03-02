@@ -344,8 +344,12 @@ namespace WpfApp1
                     vrem = stroka.Substring(0, index);
                     ploh = Convert.ToInt32(vrem);
                     ploh++;
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    NoLucky = Convert.ToInt32(vrem);
                     stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|' + NoLucky + '|';
                     lines[num] = stroka;
                     string file1 = "test.txt";
                     File.WriteAllLines(file1, lines, Encoding.Default);
