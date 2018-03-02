@@ -24,6 +24,7 @@ namespace WpfApp1
     {
         int num, index, ploh, i = 0, ii = 0, a, b, c, d, v, flagknop = 0, sbrosprov = 0, vrem1, but2flag;
         int NewSlov, Day1Slov, Day3Slov, Day7Slov, Day21Slov, Day50Slov; // TZ 2
+        int NoLucky; // Флаг повторной не сдачи слов.
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -81,6 +82,11 @@ namespace WpfApp1
                     vrem = stroka.Substring(0, index);
                     ploh = Convert.ToInt32(vrem);
                     data2 = DateTime.Today;
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    NoLucky = Convert.ToInt32(vrem);
+
                     flagknop = 1;
                     if (sbrosprov == 1)
                     { i = 0;
@@ -97,7 +103,7 @@ namespace WpfApp1
                                 if (data2 == data1)
                                 {
                                     fgot = true;
-                                    a = 1; b = 0; c = 0; d = 0; v = 0;
+                                    a = 0; b = 0; c = 0; d = 0; v = 0;
                                 }
                             }
                         }
@@ -170,6 +176,7 @@ namespace WpfApp1
                 {
                     vrem1 = num;
                     vrem1++;
+                    i = 0;
 
                     TextBlock1.Text = "Не найдено слов на проверку из: " + vrem1;
                 }
@@ -192,31 +199,26 @@ namespace WpfApp1
                     fgot = false;
                     if (a == 1)
                     {
-                        den1 = false;
                         data1 = DateTime.Today;
                     }
                     else
                     if (b == 1)
                     {
-                        den3 = false;
                         data1 = DateTime.Today;
                     }
                     else
                     if (c == 1)
                     {
-                        den7 = false;
                         data1 = DateTime.Today;
                     }
                     else
                     if (d == 1)
                     {
-                        den21 = false;
                         data1 = DateTime.Today;
                     }
                     else
                     if (v == 1)
                     {
-                        den50 = false;
                         data1 = DateTime.Today;
                     }
                     stroka = lines[num];
@@ -258,10 +260,39 @@ namespace WpfApp1
                     index = stroka.IndexOf('|');
                     vrem = stroka.Substring(0, index);
                     ploh = Convert.ToInt32(vrem);
+                    stroka = stroka.Remove(0, index + 1);
                     ploh++;
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    NoLucky = Convert.ToInt32(vrem);
+                    NoLucky++;
                     data1 = DateTime.Today;
+                    if (NoLucky >= 2)
+                    {
+                        if (a == 1) { NoLucky = 0; }
+                        else if (b == 1)
+                        {
+                            den1 = false;
+                            NoLucky = 0;
+                        }
+                        else if (c == 1)
+                        {
+                            den3 = false;
+                            NoLucky = 0;
+                        }
+                        else if (d == 1)
+                        {
+                            den7 = false;
+                            NoLucky = 0;
+                        }
+                        else if (v == 1)
+                        {
+                            den21 = false;
+                            NoLucky = 0;
+                        }
+                    }
                     stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|' + NoLucky + '|';
                     lines[num] = stroka;
                     string file1 = "test.txt";
                     File.WriteAllLines(file1, lines, Encoding.Default);
@@ -370,7 +401,7 @@ namespace WpfApp1
                     }
 
                     stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                        + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|' + NoLucky + '|';
                     lines[num] = stroka;
 
                     string file1 = "test.txt";
@@ -488,7 +519,7 @@ namespace WpfApp1
             den50 = false;
             ploh = 1;
             stroka = num.ToString() + '|' + eng + '|' + rus + '|' + data1.ToShortDateString() + '|' + fgot + '|'
-                + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|';
+                + fgot1 + '|' + den1 + '|' + den3 + '|' + den7 + '|' + den21 + '|' + den50 + '|' + ploh + '|' + NoLucky + '|';
             using (StreamWriter sw = new StreamWriter(new FileStream("test.txt", FileMode.Append, FileAccess.Write), Encoding.Default))
             {
                 sw.WriteLine(stroka);
@@ -549,6 +580,10 @@ namespace WpfApp1
                     vrem = stroka.Substring(0, index);
                     ploh = Convert.ToInt32(vrem);
                     data2 = DateTime.Today;
+                    stroka = stroka.Remove(0, index + 1);
+                    index = stroka.IndexOf('|');
+                    vrem = stroka.Substring(0, index);
+                    NoLucky = Convert.ToInt32(vrem);
                     flagknop = 0;
                     if (den1 == false)
                     {
